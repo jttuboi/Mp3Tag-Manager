@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="64918JairoTuboi.Mp3TagManager" Publisher="CN=900043E2-C162-4395-B432-FB76B55E8A00" Version="1.0.0.3" />
+  <Properties>
+    <DisplayName>Mp3Tag Manager</DisplayName>
+    <PublisherDisplayName>Jairo Tuboi</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Mp3Tag_Manager.App">
+      <VisualElements DisplayName="Mp3Tag Manager" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Mp3Tag Manager" ForegroundText="dark" BackgroundColor="lime">
+        <DefaultTile ShowName="allLogos" WideLogo="Assets\WideLogo.png" />
+        <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="lime" />
+        <InitialRotationPreference>
+          <Rotation Preference="portrait" />
+          <Rotation Preference="landscape" />
+          <Rotation Preference="portraitFlipped" />
+          <Rotation Preference="landscapeFlipped" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="musicLibrary" />
+  </Capabilities>
+</Package>
